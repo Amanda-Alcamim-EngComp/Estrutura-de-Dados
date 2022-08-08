@@ -2,10 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+void swap(int *a, int *b);
+void bubble(int *vector, int size);
+
 int main()
 {
     int vector = {7, 3, 0, 1, 3, 8, 2, 9};
-    bubble(vector, 8);
+    bubble(&vector, 8);
 
     return 0;
 }
@@ -17,7 +20,7 @@ void swap(int *a, int *b)
     *b = aux;
 }
 
-void bubble(int vector[], int size)
+void bubble(int *vector, int size)
 {    
     for(int i = 0; i < size - 1; i++)
     {
@@ -32,6 +35,7 @@ void bubble(int vector[], int size)
     }
 }
 
-// void printVector(conts int *vector){
-
-// }
+void printVector(const int *vector)
+{
+    //teste de maquina
+}
