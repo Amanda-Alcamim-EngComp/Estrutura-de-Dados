@@ -7,8 +7,8 @@ void bubble(int *vector, int size);
 
 int main()
 {
-    int vector = {7, 3, 0, 1, 3, 8, 2, 9};
-    bubble(&vector, 8);
+    int vector[8] = {7, 3, 0, 1, 3, 8, 2, 9};
+    bubble(vector, 8);
 
     return 0;
 }
