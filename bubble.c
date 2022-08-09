@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define TAM 8
 
 void swap(int *a, int *b);
 void bubble(int *vector, int size);
 
 int main()
 {
-    int vector[8] = {7, 3, 0, 1, 3, 8, 2, 9};
+    int vector[TAM] = {7, 3, 0, 1, 3, 8, 2, 9};
     bubble(vector, 8);
 
     return 0;
