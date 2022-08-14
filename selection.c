@@ -17,6 +17,13 @@ int main()
     return 0;
 }
 
+/**
+ * @brief Modo de Ordenação 'selection' que acha a menor e maior posição
+ * de memória para que haja a troca suas posições.
+ * 
+ * @param vector vetor que está sendo passado a busca para ordenação
+ */
+
 void selection(int vector[])
 {
     for(int i = 0; i < TAM; i++)
@@ -35,6 +42,13 @@ void selection(int vector[])
     }
 }
 
+/**
+ * @brief Troca as posicões selecionadas pela função de ordenação
+ * 
+ * @param a A primeira posição que a função de ordenação achou
+ * @param b A segunda posição que a função de ordenação achou
+ */
+
 void swap(int *a, int *b)
 {
     int aux = *a;
@@ -42,6 +56,11 @@ void swap(int *a, int *b)
     *b = aux;
 }
 
+/**
+ * @brief Função para imprimir na tela a ordenação acontecendo
+ * 
+ * @param array Estrutura para passar pelos dados do vetor a ser impresso
+ */
 
 void print(int array[])
 {
