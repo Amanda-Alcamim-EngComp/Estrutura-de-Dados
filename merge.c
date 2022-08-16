@@ -12,8 +12,9 @@ int main()
     int arr[] = {3,0,7,1,5,2,4,6};
     print(arr);
 
-    merge(8, 0, 4, 8);
-    print(merge);
+    merge(arr, 0, 4, 8);
+    printf("\n");
+    print(arr);
 
     return 0;
 
