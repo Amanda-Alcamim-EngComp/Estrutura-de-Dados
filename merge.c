@@ -1,13 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define TAM 8
 
 int mergesort(int arr[], int inicio, int fim);
 void merge(int arr[], int inicio, int meio, int fim);
+void print(int array[]);
 
 int main()
 {
     int arr[] = {3,0,7,1,5,2,4,6};
+    print(arr);
+
+    merge(8, 0, 4, 8);
+    print(merge);
+
+    return 0;
+
 }
 
 int mergesort(int arr[], int inicio, int fim)
@@ -69,5 +78,13 @@ void merge(int arr[], int inicio, int meio, int fim)
         arr[k] = L[i];
         i++;
         k++;
+    }
+}
+
+void print(int array[])
+{
+    for(int i = 0; i < TAM; i++)
+    {
+        printf("|%d| ", array[i]);
     }
 }
