@@ -35,3 +35,9 @@ void bubble(int *vector, int size)
         
     }
 }
+
+void media(vector)
+{
+    
+
+}
